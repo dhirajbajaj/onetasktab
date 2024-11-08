@@ -1,0 +1,21 @@
+{
+  "name": "One Task At A Time Tab",
+  "short_name": "One Task Tab",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Do one task at a time. Track current task in a newtab. Leads to more focus and clarity than multi-tasking.",
+  "homepage_url": "https://awsmdeals.com",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "default_locale": "en",
+  "chrome_url_overrides": {
+    "newtab": "src/newtab.html"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "permissions": [
+    "storage",
+    "geolocation"
+  ]
+}
+

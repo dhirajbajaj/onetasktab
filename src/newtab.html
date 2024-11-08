@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link href="../css/app.css" rel="stylesheet" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="appcontainer">
+			<div id="imagebackground"></div>
+			<div id="filter"></div>
+			<div id="content">
+				
+				<!-- Bottom left app menu, was header -->
+				<div id="header">
+					<span>ONE TASK AT A TIME</span>
+					<!-- &nbsp;<a id="setting_btn" href="#" target=""><img src="./users.svg" title="settings"/></a> -->
+					<br /><small id="quote"></small>
+				</div>
+				
+				<!-- Local Month, Date, time -->
+				<div class='clock_weather_box'>
+					<span id="clock"></span>
+					<br>
+					<span id="weather"></span>
+				</div>
+
+				<!-- Unsplash Background photo -->
+				<div id="credits">
+					 <span id="photo_desc" style="display: none;"></span>
+					 <br />
+					 <a id="photo_file" target="_blank" href="https://source.unsplash.com/featured/?art&utm_source=one_task_at_a_time&utm_medium=referral"><img src="./aperture.svg" style="vertical-align: text-top;height: 1rem"/></a>
+					 <a id="photo_by" target="_blank" href="https://source.unsplash.com/featured/?art&utm_source=one_task_at_a_time&utm_medium=referral">Source
+					 </a> 
+				</div>
+
+
+				<div id="project_box">
+					<span>PROJECT</span>
+					<br />
+					<span id="project_name"></span>
+				</div>
+
+
+				<!-- Activity description -->
+				<div class="taskblock">
+					
+					<!-- Sleep mode -->
+					<div id="sleep_block">
+						<h3 style='font-size:1.4rem; margin:5px;'>
+							<img src="./moon.svg" title="take a break"/>&nbsp;Sleep !
+						</h3>
+						<img id="exit_sleep_btn" src="./x-circle.svg" title="back to work"/>
+					</div>
+
+					<!-- Break mode -->
+					<div id="break_block">
+						<h3 style='font-size:1.4rem; margin:5px;'>
+							<img src="./coffee.svg" title="take a break"/>&nbsp;On break !
+						</h3>
+						<img id="exit_break_btn" src="./x-circle.svg" title="back to work"/>
+					</div>
+
+					<div id="active_tasks">
+						<h3 id="last_task"></h3>
+
+						<!-- Current Task mode -->
+						<div id="current_taskblock">
+							
+							<h3 id="current_task_time"></h3>
+							<h1 id="current_task"></h1>
+							
+							<!-- Options -->
+							<img id="add_btn" src="./plus-circle.svg" title="add new task"/>
+							&nbsp;&nbsp;&nbsp;
+							<img id="edit_btn" src="./edit.svg" title="edit this task description"/>
+							&nbsp;&nbsp;&nbsp;
+							<img id="complete_btn"  src="./check-circle.svg" title="complete this task"/>
+							&nbsp;&nbsp;&nbsp;
+							<img id="break_btn" src="./coffee.svg" title="take a break"/>
+							<!-- &nbsp;&nbsp;&nbsp; -->
+							<!-- <img id="sleep_btn" src="./moon.svg" title="sleep"/> -->
+						</div>
+
+						<div id="upcoming_task"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="../js/app.js"></script>
+	</body>
+</html>
